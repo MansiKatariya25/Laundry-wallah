@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry wallah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div>
+        <header class="header">
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+            <button class="b1">Username <span class="material-symbols-outlined">  logout</span></button>
+        </header>
+    </div>
+    <main class="conainer">
+        <section>
+            <div class="left-upper">
+                <h2 class="heading">Added Items</h2>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Service Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="middle" id="cart-items">
+                    <span class="material-symbols-outlined" id="symbol">error</span>
+                    <p class="empty-cart">No Items Added</p>
+                    <p colspan="3" class="empty-cart">Add items to the cart from the service bar</p>
+                </div>
+                <table class="final">
+                    <tr>
+                        <td colspan="2">Total Amount</td>
+                        <td class="total-amount" id="total-amount">₹ 0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="left-lower">
+                <p class="book">Book Now</p>
+                <hr>
+                <form action="#" class="form">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="name" placeholder="Enter name">
+                </form>
+                <form class="form2">
+                    <label for="email id">Email ID</label>
+                    <input type="email" placeholder="abcd@gmail.com">
+                    <label for="phone number">Phone Number</label>
+                    <input type="phone" placeholder="0000000000">
+                </form>
+                <button class="b2" id="book-now">Book Now</button>
+                <div id="booking-message" class="booking-message"></div>
+            </div>
+        </section>
+        <section>
+            <div class="right">
+                <p class="browse">Browse Our Services</p>
+                <p class="para">Click on the add to cart button to add the services to your cart or press skip</p>
+                <hr>
+                <div id="service-container">
+                     <!-- Services will be dynamically added here  -->
+                </div>
+                <div class="service-buttons">
+                    <button id="skip-item">Skip Item<span class="material-symbols-outlined">do_not_disturb_on</span></button>
+                    <button id="add-item">Add Item<span class="material-symbols-outlined">add_circle</span></button>
+                    <hr>
+                    <p class="add"><span class="material-symbols-outlined" id="last">error</span>Add the items to the cart and book now</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 
